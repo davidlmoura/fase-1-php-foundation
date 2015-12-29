@@ -25,7 +25,7 @@
         echo '
         <h1>Contato</h1>
         <div class="container">
-        <form class="form-signin" method="post" action="?pag=contato">
+        <form class="form-signin" method="post" action="">
         <label for="inputName" class="sr-only">Nome</label>
         <input type="name" name="nome" id="inputName" class="form-control" placeholder="Nome" required autofocus>
         <label for="inputEmail" class="sr-only">E-mail</label>
