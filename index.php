@@ -1,5 +1,6 @@
 <?php
 
+    $rotasPossiveis = ['home','empresa','produtos','servicos','contato'];
     $rota = parse_url("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
     $path = explode("/",$rota['path']);
 
@@ -27,11 +28,11 @@
 
   <div class="masthead">
     <ul class="nav nav-pills pull-right">
-      <li class="active"><a href="/">Home</a></li>
-      <li><a href="/empresa">Empresa</a></li>
-      <li><a href="/produtos">Produtos</a></li>
-      <li><a href="/servicos">Serviços</a></li>
-      <li><a href="/contato">Contato</a></li>
+      <li class="active"><a href="">Home</a></li>
+      <li><a href="empresa">Empresa</a></li>
+      <li><a href="produtos">Produtos</a></li>
+      <li><a href="servicos">Serviços</a></li>
+      <li><a href="contato">Contato</a></li>
     </ul>
     <h3 class="muted">Fase 1 - PHP Foundation</h3>
   </div>
