@@ -3,6 +3,9 @@
 
   <link href="http://getbootstrap.com/2.3.2/assets/css/bootstrap-responsive.css" rel="stylesheet">
 
+  <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+  <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
   <script src="http://getbootstrap.com/2.3.2/assets/js/html5shiv.js"></script>
 
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-144-precomposed.png">
