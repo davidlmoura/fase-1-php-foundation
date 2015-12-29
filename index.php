@@ -34,8 +34,10 @@
     <?php
     if(!$_GET['pag']) {
       require_once("home.php");
-    } else {
+    } elseif(file_exists($_GET['pag'].".php")) {
       require_once($_GET['pag'] . ".php");
+    } else {
+      echo "<h1>Erro 404 - Página não encontrada! =(</h1>";
     }
     ?>
   </div>
