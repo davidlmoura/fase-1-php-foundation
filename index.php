@@ -1,11 +1,36 @@
 <?php
 
-    $rotasPossiveis = ['home','empresa','produtos','servicos','contato'];
-    $rota = parse_url("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
-    $path = explode("/",$rota['path']);
+// Utilizei o "explode" ao invés do str_replace,
+// primeiramente porque é mais fácil para tratar argumentos no GET(no caso não tratei pq não precisou no projeto)
+// segundo porque quando fiz o projeto, deixei ele num direito chamado projeto1... então ficou projeto1/argumentos,
+// então tive que chamar pelo array 2 do path.
 
+function ExibirPagina() {
+
+  $pegarURL = parse_url("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+  global $path;
+  $path = explode("/",$pegarURL['path']);
+
+  $rotasPossiveis = ['home','empresa','produtos','servicos','contato'];
+
+  if(in_array($path[2], $rotasPossiveis)) {
+    $RotaExiste = 1;
+  } else {
+    $RotaExiste = 0;
+  }
+
+  if($path[2] == "") {
+    return "home.php";
+  } elseif($RotaExiste == 1) {
+    return $path[2] . ".php";
+  } else {
+    // O erro response code está no arquivo erro.php
+    return "erro.php";
+  }
+}
 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -28,7 +53,7 @@
 
   <div class="masthead">
     <ul class="nav nav-pills pull-right">
-      <li class="active"><a href="">Home</a></li>
+      <li class="active"><a href="home">Home</a></li>
       <li><a href="empresa">Empresa</a></li>
       <li><a href="produtos">Produtos</a></li>
       <li><a href="servicos">Serviços</a></li>
@@ -40,23 +65,12 @@
   <hr>
 
   <div class="jumbotron">
-    <?php
-   /* if(!$_GET['pag']) {
-      require_once("home.php");
-    } elseif(file_exists($_GET['pag'].".php")) {
-      require_once($_GET['pag'] . ".php");
-    } else {
-      echo "<h1>Erro 404 - Página não encontrada! =(</h1>";
-    } */
-
-    require_once($path[2].".php");
-    ?>
+    <?php require_once(ExibirPagina()); ?>
   </div>
 
   <hr>
 
   <?php require_once("rodape.php"); ?>
-
 </div>
 
 </body>
