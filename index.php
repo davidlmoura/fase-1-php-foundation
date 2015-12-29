@@ -31,14 +31,18 @@
   <hr>
 
   <div class="jumbotron">
-    <h1>Home Page!</h1>
+    <?php
+    if(!$_GET['pag']) {
+      require_once("home.php");
+    } else {
+      require_once($_GET['pag'] . ".php");
+    }
+    ?>
   </div>
 
   <hr>
 
-  <div class="footer">
-    <p>&copy; Company 2013</p>
-  </div>
+  <?php require_once("rodape.php"); ?>
 
 </div>
 
