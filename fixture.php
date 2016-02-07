@@ -26,7 +26,7 @@ $i = 0;
 foreach($PaginasPossiveis as $Possiveis) {
 
     $conteudo = "Teste {$i}";
-    $pagina = $Possiveis[$i];
+    $pagina = $Possiveis;
 
     $smt = $conn->prepare("INSERT INTO paginas (pagina, conteudo) VALUE (:pagina,:conteudo);");
     $smt->bindParam(":pagina",$pagina);
