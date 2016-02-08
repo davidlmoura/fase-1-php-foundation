@@ -1,5 +1,6 @@
 <?php
 
+include 'conexaoDB.php';
 // Utilizei o "explode" ao invés do str_replace,
 // primeiramente porque é mais fácil para tratar argumentos no GET(no caso não tratei pq não precisou no projeto)
 // segundo porque quando fiz o projeto, deixei ele num direito chamado projeto1... então ficou projeto1/argumentos,
@@ -11,9 +12,15 @@ function ExibirPagina() {
   global $path;
   $path = explode("/",$pegarURL['path']);
 
-  $rotasPossiveis = ['home','empresa','produtos','servicos','contato'];
+  $conn = conexaoDB();
+  $sql = "SELECT * FROM paginas WHERE pagina = :pagina";
+  $stmt = $conn->prepare($sql);
+  $stmt->bindValue("pagina", $path[2]);
+  $stmt->execute();
 
-  if(in_array($path[2], $rotasPossiveis)) {
+  $pagDB = $stmt->fetch(PDO::FETCH_ASSOC);
+
+  if($path[2] == $pagDB['pagina']) {
     $RotaExiste = 1;
   } else {
     $RotaExiste = 0;
