@@ -20,7 +20,7 @@ echo " - OK\n";
 
 echo "Inserindo Dados";
 
-$PaginasPossiveis = ['home','empresa','produtos','servicos','contato'];
+$PaginasPossiveis = ['home','empresa','produtos','servicos','contato', 'erro'];
 
 $i = 0;
 foreach($PaginasPossiveis as $Possiveis) {
