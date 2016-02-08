@@ -14,7 +14,7 @@ echo "Criando Tabela";
 $conn->query("CREATE TABLE paginas (
       id INT NOT NULL AUTO_INCREMENT,
       pagina VARCHAR(255) CHARACTER SET 'utf8' NULL,
-      conteudo VARCHAR(255) CHARACTER SET 'utf8' NULL,
+      conteudo TEXT CHARACTER SET 'utf8' NULL,
       PRIMARY KEY (id));");
 echo " - OK\n";
 

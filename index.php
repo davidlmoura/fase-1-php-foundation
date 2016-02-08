@@ -12,28 +12,33 @@ function ExibirPagina() {
   global $path;
   $path = explode("/",$pegarURL['path']);
 
-  $conn = conexaoDB();
-  $sql = "SELECT * FROM paginas WHERE pagina = :pagina";
-  $stmt = $conn->prepare($sql);
-  $stmt->bindValue("pagina", $path[2]);
-  $stmt->execute();
+  $nomePagina = $path[2];
 
-  $pagDB = $stmt->fetch(PDO::FETCH_ASSOC);
-
-  if($path[2] == $pagDB['pagina']) {
-    $RotaExiste = 1;
+  if($nomePagina == "") {
+    $nomePagina = "home";
   } else {
-    $RotaExiste = 0;
+    $conn = conexaoDB();
+    $sql = "SELECT * FROM paginas WHERE pagina = :pagina";
+    $stmt = $conn->prepare($sql);
+    $stmt->bindValue("pagina", $path[2]);
+    $stmt->execute();
+    if($stmt->rowCount() == 0) {
+      $nomePagina = "erro";
+    } else {
+      // Fica com o valor do path[2]
+    }
   }
 
-  if($path[2] == "") {
-    return "home.php";
-  } elseif($RotaExiste == 1) {
-    return $path[2] . ".php";
-  } else {
-    // O erro response code está no arquivo erro.php
-    return "erro.php";
-  }
+  $conn2 = conexaoDB();
+  $sqlCont = "SELECT * FROM paginas WHERE pagina = :pagina";
+  $stmtCont = $conn2->prepare($sqlCont);
+  $stmtCont->bindValue("pagina", $nomePagina);
+  $stmtCont->execute();
+  $conteudo = $stmtCont->fetch(PDO::FETCH_ASSOC);
+
+  return $conteudo['conteudo'];
+
+
 }
 
 ?>
@@ -72,7 +77,7 @@ function ExibirPagina() {
   <hr>
 
   <div class="jumbotron">
-    <?php require_once(ExibirPagina()); ?>
+   <h1> <?=ExibirPagina();?> </h1>
   </div>
 
   <hr>
