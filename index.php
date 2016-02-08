@@ -8,6 +8,8 @@ include 'conexaoDB.php';
 
 function ExibirPagina() {
 
+  $conn = conexaoDB();
+
   $pegarURL = parse_url("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
   global $path;
   $path = explode("/",$pegarURL['path']);
@@ -16,9 +18,20 @@ function ExibirPagina() {
 
   if($nomePagina == "") {
     $nomePagina = "home";
+  } elseif($nomePagina == "busca") {
+    $conteudoBusca = $_POST['busca'];
+    $sqlBusca = "SELECT * FROM paginas WHERE conteudo LIKE :conteudo";
+    $stmtBusca = $conn->prepare($sqlBusca);
+    $stmtBusca->bindValue(':conteudo', '%'.$conteudoBusca.'%', PDO::PARAM_STR);
+    $stmtBusca->execute();
+    $conteudoBusca = $stmtBusca->fetchAll(PDO::FETCH_ASSOC);
+    $somarConteudo = $stmtBusca->rowCount()." Páginas encontradas! <br />";
+    foreach ($conteudoBusca as $busca) {
+      $somarConteudo .= "Página: <a href='".$busca['pagina']."'>".$busca['pagina']."</a><br />";
+    }
+
   } else {
-    $conn = conexaoDB();
-    $sql = "SELECT * FROM paginas WHERE pagina = :pagina";
+    $sql = "SELECT id FROM paginas WHERE pagina = :pagina";
     $stmt = $conn->prepare($sql);
     $stmt->bindValue("pagina", $path[2]);
     $stmt->execute();
@@ -29,14 +42,17 @@ function ExibirPagina() {
     }
   }
 
-  $conn2 = conexaoDB();
   $sqlCont = "SELECT * FROM paginas WHERE pagina = :pagina";
-  $stmtCont = $conn2->prepare($sqlCont);
+  $stmtCont = $conn->prepare($sqlCont);
   $stmtCont->bindValue("pagina", $nomePagina);
   $stmtCont->execute();
   $conteudo = $stmtCont->fetch(PDO::FETCH_ASSOC);
 
-  return $conteudo['conteudo'];
+  if($nomePagina == "busca") {
+    echo $somarConteudo;
+  } else {
+    return $conteudo['conteudo'];
+  }
 
 
 }
@@ -77,7 +93,7 @@ function ExibirPagina() {
   <hr>
 
   <div class="jumbotron">
-   <h1> <?=ExibirPagina();?> </h1>
+   <?=ExibirPagina();?>
   </div>
 
   <hr>

@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dc2cb07d-c47f-4892-bf2a-30b8abe97d23" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fixture.php" afterPath="$PROJECT_DIR$/fixture.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rodape.php" afterPath="$PROJECT_DIR$/rodape.php" />
     </list>
     <ignored path="PHPFoundation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,12 +29,32 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.1542227">
-              <caret line="80" column="8" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.75764996">
+              <caret line="29" column="94" selection-start-line="29" selection-start-column="94" selection-end-line="29" selection-end-column="94" />
               <folding>
-                <marker date="1454892226847" expanded="true" signature="654:698" placeholder="SELECT * FRO..paginas..." />
-                <marker date="1454892226847" expanded="true" signature="959:1003" placeholder="SELECT * FRO..paginas..." />
+                <marker date="1454895705879" expanded="true" signature="722:773" placeholder="SELECT * FRO..paginas..." />
+                <marker date="1454895705879" expanded="true" signature="1232:1277" placeholder="SELECT id FR..paginas..." />
+                <marker date="1454895705879" expanded="true" signature="1514:1558" placeholder="SELECT * FRO..paginas..." />
+                <marker date="1454895705879" expanded="true" signature="1872:2798" placeholder="..." />
+                <marker date="1454895705879" expanded="true" signature="1879:1896" placeholder="..." />
+                <marker date="1454895705879" expanded="true" signature="1879:2242" placeholder="..." />
+                <marker date="1454895705879" expanded="true" signature="2250:2263" placeholder="..." />
+                <marker date="1454895705879" expanded="true" signature="2250:2790" placeholder="..." />
+                <marker date="1454895705879" expanded="true" signature="2282:2781" placeholder="..." />
+                <marker date="1454895705879" expanded="true" signature="2308:2658" placeholder="..." />
+                <marker date="1454895705879" expanded="true" signature="2350:2598" placeholder="..." />
+                <marker date="1454895705879" expanded="true" signature="2693:2726" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rodape.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rodape.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.4193548">
+              <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -65,13 +85,13 @@
         <option value="$PROJECT_DIR$/empresa.php" />
         <option value="$PROJECT_DIR$/servicos.php" />
         <option value="$PROJECT_DIR$/produtos.php" />
-        <option value="$PROJECT_DIR$/rodape.php" />
         <option value="$PROJECT_DIR$/bootstrap_files.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/css/css.css" />
         <option value="$PROJECT_DIR$/erro.php" />
         <option value="$PROJECT_DIR$/contato.php" />
         <option value="$PROJECT_DIR$/fixture.php" />
+        <option value="$PROJECT_DIR$/rodape.php" />
         <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
@@ -214,7 +234,13 @@
       <option name="project" value="LOCAL" />
       <updated>1454890746871</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Alterando campo conteudo de VARCHAR para TEXT no fixture e implementando conteúdo dinâmico com DB sem os arquivos de include">
+      <created>1454892313545</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1454892313545</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -258,7 +284,8 @@
     <MESSAGE value="Registrando array em rotas" />
     <MESSAGE value="Criando função para rotas e tratamento do erro 404" />
     <MESSAGE value="Adicionado página de erro no fixture" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionado página de erro no fixture" />
+    <MESSAGE value="Alterando campo conteudo de VARCHAR para TEXT no fixture e implementando conteúdo dinâmico com DB sem os arquivos de include" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alterando campo conteudo de VARCHAR para TEXT no fixture e implementando conteúdo dinâmico com DB sem os arquivos de include" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -377,14 +404,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rodape.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.025851939">
-          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conexaoDB.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -446,13 +465,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/rodape.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4193548">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.1542227">
-          <caret line="80" column="8" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.75764996">
+          <caret line="29" column="94" selection-start-line="29" selection-start-column="94" selection-end-line="29" selection-end-column="94" />
           <folding>
-            <marker date="1454892226847" expanded="true" signature="654:698" placeholder="SELECT * FRO..paginas..." />
-            <marker date="1454892226847" expanded="true" signature="959:1003" placeholder="SELECT * FRO..paginas..." />
+            <marker date="1454895705879" expanded="true" signature="722:773" placeholder="SELECT * FRO..paginas..." />
+            <marker date="1454895705879" expanded="true" signature="1232:1277" placeholder="SELECT id FR..paginas..." />
+            <marker date="1454895705879" expanded="true" signature="1514:1558" placeholder="SELECT * FRO..paginas..." />
+            <marker date="1454895705879" expanded="true" signature="1872:2798" placeholder="..." />
+            <marker date="1454895705879" expanded="true" signature="1879:1896" placeholder="..." />
+            <marker date="1454895705879" expanded="true" signature="1879:2242" placeholder="..." />
+            <marker date="1454895705879" expanded="true" signature="2250:2263" placeholder="..." />
+            <marker date="1454895705879" expanded="true" signature="2250:2790" placeholder="..." />
+            <marker date="1454895705879" expanded="true" signature="2282:2781" placeholder="..." />
+            <marker date="1454895705879" expanded="true" signature="2308:2658" placeholder="..." />
+            <marker date="1454895705879" expanded="true" signature="2350:2598" placeholder="..." />
+            <marker date="1454895705879" expanded="true" signature="2693:2726" placeholder="..." />
           </folding>
         </state>
       </provider>
