@@ -57,6 +57,26 @@ function ExibirPagina() {
 
 }
 
+function EditarConteudo() {
+
+  $conn = conexaoDB();
+
+  $pegarURL = parse_url("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+  global $path;
+  $path = explode("/",$pegarURL['path']);
+
+  $conteudo = $_POST['conteudo'];
+  $sqlEdi = "UPDATE paginas SET conteudo = :conteudo WHERE pagina = :pagina";
+  $stmtEdi = $conn->prepare($sqlEdi);
+  $stmtEdi->bindValue("pagina", $path[3]);
+  $stmtEdi->bindValue("conteudo", $conteudo);
+  $stmtEdi->execute();
+
+    return "<h1>Dados alterados!</h1>";
+
+
+}
+
 ?>
 
 
@@ -93,7 +113,6 @@ function ExibirPagina() {
   <hr>
 
   <div class="jumbotron">
-    Conteúdo atual: <?=ExibirPagina();?>
    <? include_once("contato.php"); ?>
   </div>
 
