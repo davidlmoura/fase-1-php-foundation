@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc2cb07d-c47f-4892-bf2a-30b8abe97d23" name="Default" comment="">
+    <list default="true" id="dc2cb07d-c47f-4892-bf2a-30b8abe97d23" name="Default" comment="Implementando sistema de Login e verificação de Páginas (Finalizado)">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/contato.php" afterPath="$PROJECT_DIR$/admin/contato.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index.php" afterPath="$PROJECT_DIR$/admin/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/rodape.php" afterPath="$PROJECT_DIR$/admin/rodape.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fixture_admin.php" afterPath="$PROJECT_DIR$/fixture_admin.php" />
     </list>
     <ignored path="PHPFoundation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,66 +23,7 @@
     <favorites_list name="PHPFoundation" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.903226">
-              <caret line="48" column="49" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="49" />
-              <folding>
-                <marker date="1458085991402" expanded="true" signature="722:773" placeholder="SELECT * FRO..paginas..." />
-                <marker date="1458085991402" expanded="true" signature="1232:1277" placeholder="SELECT id FR..paginas..." />
-                <marker date="1458085991402" expanded="true" signature="1514:1558" placeholder="SELECT * FRO..paginas..." />
-                <marker date="1458085991402" expanded="true" signature="1879:1896" placeholder="..." />
-                <marker date="1458085991402" expanded="true" signature="2250:2263" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.806452">
-              <caret line="142" column="22" selection-start-line="142" selection-start-column="22" selection-end-line="142" selection-end-column="22" />
-              <folding>
-                <marker date="1458099929107" expanded="true" signature="995:1040" placeholder="SELECT id FR..paginas..." />
-                <marker date="1458099929107" expanded="true" signature="1277:1321" placeholder="SELECT * FRO..paginas..." />
-                <marker date="1458099929107" expanded="true" signature="1766:1828" placeholder="UPDATE pagin..." />
-                <marker date="1458099929107" expanded="true" signature="2251:2265" placeholder="SELECT * FRO..admin..." />
-                <marker date="1458099929107" expanded="true" signature="2267:2290" placeholder="UPDATE pagin..." />
-                <marker date="1458099929107" expanded="true" signature="2267:2306" placeholder="SELECT * FRO..admin..." />
-                <marker date="1458099929107" expanded="true" signature="2267:2307" placeholder="SELECT * FRO..admin..." />
-                <marker date="1458099929107" expanded="true" signature="2267:2315" placeholder="SELECT * FRO..admin..." />
-                <marker date="1458099929107" expanded="true" signature="2267:2797" placeholder="SELECT * FRO..admin..." />
-                <marker date="1458099929107" expanded="true" signature="2649:2796" placeholder="..." />
-                <marker date="1458099929107" expanded="true" signature="2656:2671" placeholder="..." />
-                <marker date="1458099929107" expanded="true" signature="2656:2796" placeholder="..." />
-                <marker date="1458099929107" expanded="true" signature="2737:2796" placeholder="..." />
-                <marker date="1458099929107" expanded="true" signature="2771:2796" placeholder="{...}" />
-                <marker date="1458099929107" expanded="true" signature="3172:3185" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contato.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/contato.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35370153">
-              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-              <folding>
-                <marker date="1458100498572" expanded="true" signature="465:1095" placeholder="..." />
-                <marker date="1458100498572" expanded="true" signature="524:1080" placeholder="..." />
-                <marker date="1458100498572" expanded="true" signature="1331:1837" placeholder="..." />
-                <marker date="1458100498572" expanded="true" signature="1390:1822" placeholder="..." />
-                <marker date="1458100498572" expanded="true" signature="1586:1645" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -322,7 +259,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458091804234</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Implementando sistema de Login e verificação de Páginas (Finalizado)">
+      <created>1458100552074</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1458100552074</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -372,7 +315,8 @@
     <MESSAGE value="UPDATE funcionando para editar as páginas" />
     <MESSAGE value="Instalando CKEDITOR" />
     <MESSAGE value="Criado fixture_admin.php para inserir dados do admin no banco (Senha com password_hash)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Criado fixture_admin.php para inserir dados do admin no banco (Senha com password_hash)." />
+    <MESSAGE value="Implementando sistema de Login e verificação de Páginas (Finalizado)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementando sistema de Login e verificação de Páginas (Finalizado)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -611,20 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.903226">
-          <caret line="48" column="49" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="49" />
-          <folding>
-            <marker date="1458085991402" expanded="true" signature="722:773" placeholder="SELECT * FRO..paginas..." />
-            <marker date="1458085991402" expanded="true" signature="1232:1277" placeholder="SELECT id FR..paginas..." />
-            <marker date="1458085991402" expanded="true" signature="1514:1558" placeholder="SELECT * FRO..paginas..." />
-            <marker date="1458085991402" expanded="true" signature="1879:1896" placeholder="..." />
-            <marker date="1458085991402" expanded="true" signature="2250:2263" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fixture_admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.67215043">
@@ -637,9 +567,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/contato.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35370153">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <folding>
+            <marker date="1458100498572" expanded="true" signature="465:1095" placeholder="..." />
+            <marker date="1458100498572" expanded="true" signature="524:1080" placeholder="..." />
+            <marker date="1458100498572" expanded="true" signature="1331:1837" placeholder="..." />
+            <marker date="1458100498572" expanded="true" signature="1390:1822" placeholder="..." />
+            <marker date="1458100498572" expanded="true" signature="1586:1645" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.806452">
+        <state vertical-scroll-proportion="0.61222094">
           <caret line="142" column="22" selection-start-line="142" selection-start-column="22" selection-end-line="142" selection-end-column="22" />
           <folding>
             <marker date="1458099929107" expanded="true" signature="995:1040" placeholder="SELECT id FR..paginas..." />
@@ -661,16 +605,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/contato.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35370153">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.5428907">
+          <caret line="48" column="49" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="49" />
           <folding>
-            <marker date="1458100498572" expanded="true" signature="465:1095" placeholder="..." />
-            <marker date="1458100498572" expanded="true" signature="524:1080" placeholder="..." />
-            <marker date="1458100498572" expanded="true" signature="1331:1837" placeholder="..." />
-            <marker date="1458100498572" expanded="true" signature="1390:1822" placeholder="..." />
-            <marker date="1458100498572" expanded="true" signature="1586:1645" placeholder="..." />
+            <marker date="1458085991402" expanded="true" signature="722:773" placeholder="SELECT * FRO..paginas..." />
+            <marker date="1458085991402" expanded="true" signature="1232:1277" placeholder="SELECT id FR..paginas..." />
+            <marker date="1458085991402" expanded="true" signature="1514:1558" placeholder="SELECT * FRO..paginas..." />
+            <marker date="1458085991402" expanded="true" signature="1879:1896" placeholder="..." />
+            <marker date="1458085991402" expanded="true" signature="2250:2263" placeholder="..." />
           </folding>
         </state>
       </provider>
