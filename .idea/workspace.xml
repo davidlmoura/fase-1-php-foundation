@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc2cb07d-c47f-4892-bf2a-30b8abe97d23" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fixture_admin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/contato.php" afterPath="$PROJECT_DIR$/admin/contato.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index.php" afterPath="$PROJECT_DIR$/admin/index.php" />
     </list>
     <ignored path="PHPFoundation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contato.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="contato.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/contato.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3877791">
-              <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+            <state vertical-scroll-proportion="-19.161291">
+              <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
               <folding>
                 <marker date="1458091181874" expanded="true" signature="195:697" placeholder="..." />
                 <marker date="1458091181874" expanded="true" signature="254:432" placeholder="..." />
@@ -63,6 +62,20 @@
                 <marker date="1458091181874" expanded="true" signature="254:682" placeholder="..." />
                 <marker date="1458091181874" expanded="true" signature="450:464" placeholder="..." />
                 <marker date="1458091181874" expanded="true" signature="450:505" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fixture_admin.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fixture_admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.62044656">
+              <caret line="24" column="84" selection-start-line="24" selection-start-column="84" selection-end-line="24" selection-end-column="84" />
+              <folding>
+                <marker date="1458091744349" expanded="true" signature="139:165" placeholder="DROP TABLE I..." />
+                <marker date="1458091744349" expanded="true" signature="224:412" placeholder="CREATE TABLE..admin..." />
+                <marker date="1458091744349" expanded="true" signature="565:623" placeholder="INSERT INTO admin..." />
               </folding>
             </state>
           </provider>
@@ -104,6 +117,7 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/admin/index.php" />
         <option value="$PROJECT_DIR$/admin/contato.php" />
+        <option value="$PROJECT_DIR$/fixture_admin.php" />
       </list>
     </option>
   </component>
@@ -193,6 +207,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\David\PHPFoundation" />
       <recent name="C:\Users\David\PHPFoundation\admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -288,7 +303,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458089093115</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Instalando CKEDITOR">
+      <created>1458091235545</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1458091235545</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -336,7 +357,8 @@
     <MESSAGE value="Adicionando rotina para buscar conteúdo nas páginas" />
     <MESSAGE value="Adicionando estrutura da área administrativa e formulário para edição de conteúdo" />
     <MESSAGE value="UPDATE funcionando para editar as páginas" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATE funcionando para editar as páginas" />
+    <MESSAGE value="Instalando CKEDITOR" />
+    <option name="LAST_COMMIT_MESSAGE" value="Instalando CKEDITOR" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -603,8 +625,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/contato.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3877791">
-          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+        <state vertical-scroll-proportion="-19.161291">
+          <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
           <folding>
             <marker date="1458091181874" expanded="true" signature="195:697" placeholder="..." />
             <marker date="1458091181874" expanded="true" signature="254:432" placeholder="..." />
@@ -612,6 +634,18 @@
             <marker date="1458091181874" expanded="true" signature="254:682" placeholder="..." />
             <marker date="1458091181874" expanded="true" signature="450:464" placeholder="..." />
             <marker date="1458091181874" expanded="true" signature="450:505" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture_admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62044656">
+          <caret line="24" column="84" selection-start-line="24" selection-start-column="84" selection-end-line="24" selection-end-column="84" />
+          <folding>
+            <marker date="1458091744349" expanded="true" signature="139:165" placeholder="DROP TABLE I..." />
+            <marker date="1458091744349" expanded="true" signature="224:412" placeholder="CREATE TABLE..admin..." />
+            <marker date="1458091744349" expanded="true" signature="565:623" placeholder="INSERT INTO admin..." />
           </folding>
         </state>
       </provider>
