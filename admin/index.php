@@ -14,7 +14,7 @@ function ExibirPagina() {
   global $path;
   $path = explode("/",$pegarURL['path']);
 
-  $nomePagina = $path[2];
+  $nomePagina = $path[3];
 
   if($nomePagina == "") {
     $nomePagina = "home";
@@ -33,7 +33,7 @@ function ExibirPagina() {
   } else {
     $sql = "SELECT id FROM paginas WHERE pagina = :pagina";
     $stmt = $conn->prepare($sql);
-    $stmt->bindValue("pagina", $path[2]);
+    $stmt->bindValue("pagina", $path[3]);
     $stmt->execute();
     if($stmt->rowCount() == 0) {
       $nomePagina = "erro";
@@ -64,7 +64,7 @@ function ExibirPagina() {
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
-  <title>Projeto Fase 1 - PHP Foundation</title>
+  <title>Admin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Site Simples">
   <meta name="author" content="David Moura">
@@ -87,13 +87,14 @@ function ExibirPagina() {
       <li><a href="servicos">Serviços</a></li>
       <li><a href="contato">Contato</a></li>
     </ul>
-    <h3 class="muted">Fase 1 - PHP Foundation</h3>
+    <h3 class="muted">Área Administrativa</h3>
   </div>
 
   <hr>
 
   <div class="jumbotron">
-   <?=ExibirPagina();?>
+    Conteúdo atual: <?=ExibirPagina();?>
+   <? include_once("contato.php"); ?>
   </div>
 
   <hr>
