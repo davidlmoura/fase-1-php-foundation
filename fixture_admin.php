@@ -14,7 +14,7 @@ echo "Criando Tabela";
 $conn->query("CREATE TABLE admin (
       id INT NOT NULL AUTO_INCREMENT,
       usuario VARCHAR(255) CHARACTER SET 'utf8' NULL,
-      senha VARCHAR(255) CHARACTER SET 'utf8' NULL,
+      senha TEXT CHARACTER SET 'utf8' NULL,
       PRIMARY KEY (id));");
 echo " - OK\n";
 

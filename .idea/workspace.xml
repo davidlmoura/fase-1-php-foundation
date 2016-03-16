@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc2cb07d-c47f-4892-bf2a-30b8abe97d23" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fixture_admin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/contato.php" afterPath="$PROJECT_DIR$/admin/contato.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index.php" afterPath="$PROJECT_DIR$/admin/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/rodape.php" afterPath="$PROJECT_DIR$/admin/rodape.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fixture_admin.php" afterPath="$PROJECT_DIR$/fixture_admin.php" />
     </list>
     <ignored path="PHPFoundation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,56 +29,58 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.903226">
+              <caret line="48" column="49" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="49" />
+              <folding>
+                <marker date="1458085991402" expanded="true" signature="722:773" placeholder="SELECT * FRO..paginas..." />
+                <marker date="1458085991402" expanded="true" signature="1232:1277" placeholder="SELECT id FR..paginas..." />
+                <marker date="1458085991402" expanded="true" signature="1514:1558" placeholder="SELECT * FRO..paginas..." />
+                <marker date="1458085991402" expanded="true" signature="1879:1896" placeholder="..." />
+                <marker date="1458085991402" expanded="true" signature="2250:2263" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2923077">
-              <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
+            <state vertical-scroll-proportion="-16.806452">
+              <caret line="142" column="22" selection-start-line="142" selection-start-column="22" selection-end-line="142" selection-end-column="22" />
               <folding>
-                <marker date="1458091150498" expanded="true" signature="722:773" placeholder="SELECT * FRO..paginas..." />
-                <marker date="1458091150498" expanded="true" signature="1232:1277" placeholder="SELECT id FR..paginas..." />
-                <marker date="1458091150498" expanded="true" signature="1514:1558" placeholder="SELECT * FRO..paginas..." />
-                <marker date="1458091150498" expanded="true" signature="2074:2136" placeholder="UPDATE pagin..." />
+                <marker date="1458099929107" expanded="true" signature="995:1040" placeholder="SELECT id FR..paginas..." />
+                <marker date="1458099929107" expanded="true" signature="1277:1321" placeholder="SELECT * FRO..paginas..." />
+                <marker date="1458099929107" expanded="true" signature="1766:1828" placeholder="UPDATE pagin..." />
+                <marker date="1458099929107" expanded="true" signature="2251:2265" placeholder="SELECT * FRO..admin..." />
+                <marker date="1458099929107" expanded="true" signature="2267:2290" placeholder="UPDATE pagin..." />
+                <marker date="1458099929107" expanded="true" signature="2267:2306" placeholder="SELECT * FRO..admin..." />
+                <marker date="1458099929107" expanded="true" signature="2267:2307" placeholder="SELECT * FRO..admin..." />
+                <marker date="1458099929107" expanded="true" signature="2267:2315" placeholder="SELECT * FRO..admin..." />
+                <marker date="1458099929107" expanded="true" signature="2267:2797" placeholder="SELECT * FRO..admin..." />
+                <marker date="1458099929107" expanded="true" signature="2649:2796" placeholder="..." />
+                <marker date="1458099929107" expanded="true" signature="2656:2671" placeholder="..." />
+                <marker date="1458099929107" expanded="true" signature="2656:2796" placeholder="..." />
+                <marker date="1458099929107" expanded="true" signature="2737:2796" placeholder="..." />
+                <marker date="1458099929107" expanded="true" signature="2771:2796" placeholder="{...}" />
+                <marker date="1458099929107" expanded="true" signature="3172:3185" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="erro.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/erro.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contato.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="contato.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/contato.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.161291">
-              <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.35370153">
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
               <folding>
-                <marker date="1458091181874" expanded="true" signature="195:697" placeholder="..." />
-                <marker date="1458091181874" expanded="true" signature="254:432" placeholder="..." />
-                <marker date="1458091181874" expanded="true" signature="254:506" placeholder="..." />
-                <marker date="1458091181874" expanded="true" signature="254:682" placeholder="..." />
-                <marker date="1458091181874" expanded="true" signature="450:464" placeholder="..." />
-                <marker date="1458091181874" expanded="true" signature="450:505" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fixture_admin.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fixture_admin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62044656">
-              <caret line="24" column="84" selection-start-line="24" selection-start-column="84" selection-end-line="24" selection-end-column="84" />
-              <folding>
-                <marker date="1458091744349" expanded="true" signature="139:165" placeholder="DROP TABLE I..." />
-                <marker date="1458091744349" expanded="true" signature="224:412" placeholder="CREATE TABLE..admin..." />
-                <marker date="1458091744349" expanded="true" signature="565:623" placeholder="INSERT INTO admin..." />
+                <marker date="1458100498572" expanded="true" signature="465:1095" placeholder="..." />
+                <marker date="1458100498572" expanded="true" signature="524:1080" placeholder="..." />
+                <marker date="1458100498572" expanded="true" signature="1331:1837" placeholder="..." />
+                <marker date="1458100498572" expanded="true" signature="1390:1822" placeholder="..." />
+                <marker date="1458100498572" expanded="true" signature="1586:1645" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -115,9 +120,11 @@
         <option value="$PROJECT_DIR$/fixture.php" />
         <option value="$PROJECT_DIR$/rodape.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/admin/rodape.php" />
+        <option value="$PROJECT_DIR$/fixture_admin.php" />
         <option value="$PROJECT_DIR$/admin/index.php" />
         <option value="$PROJECT_DIR$/admin/contato.php" />
-        <option value="$PROJECT_DIR$/fixture_admin.php" />
       </list>
     </option>
   </component>
@@ -207,8 +214,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\David\PHPFoundation" />
       <recent name="C:\Users\David\PHPFoundation\admin" />
+      <recent name="C:\Users\David\PHPFoundation" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\David\PHPFoundation\css" />
@@ -309,7 +316,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458091235545</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Criado fixture_admin.php para inserir dados do admin no banco (Senha com password_hash).">
+      <created>1458091804234</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1458091804234</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -358,7 +371,8 @@
     <MESSAGE value="Adicionando estrutura da área administrativa e formulário para edição de conteúdo" />
     <MESSAGE value="UPDATE funcionando para editar as páginas" />
     <MESSAGE value="Instalando CKEDITOR" />
-    <option name="LAST_COMMIT_MESSAGE" value="Instalando CKEDITOR" />
+    <MESSAGE value="Criado fixture_admin.php para inserir dados do admin no banco (Senha com password_hash)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Criado fixture_admin.php para inserir dados do admin no banco (Senha com password_hash)." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -486,13 +500,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/erro.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.548387">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conexaoDB.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -531,23 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contato.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding>
-            <marker date="1454890630737" expanded="true" signature="79:382" placeholder="..." />
-            <marker date="1454890630737" expanded="true" signature="88:371" placeholder="..." />
-            <marker date="1454890630737" expanded="true" signature="101:152" placeholder="..." />
-            <marker date="1454890630737" expanded="true" signature="165:219" placeholder="..." />
-            <marker date="1454890630737" expanded="true" signature="232:289" placeholder="..." />
-            <marker date="1454890630737" expanded="true" signature="302:361" placeholder="..." />
-            <marker date="1454890630737" expanded="true" signature="476:1479" placeholder="..." />
-            <marker date="1454890630737" expanded="true" signature="535:1464" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/bootstrap_files.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -572,25 +562,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/rodape.php">
+    <entry file="file://$PROJECT_DIR$/admin/ckeditor/samples/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.23266745">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="42" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5945946">
-          <caret line="83" column="9" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
-          <folding>
-            <marker date="1458085991402" expanded="true" signature="722:773" placeholder="SELECT * FRO..paginas..." />
-            <marker date="1458085991402" expanded="true" signature="1232:1277" placeholder="SELECT id FR..paginas..." />
-            <marker date="1458085991402" expanded="true" signature="1514:1558" placeholder="SELECT * FRO..paginas..." />
-            <marker date="1458085991402" expanded="true" signature="1879:1896" placeholder="..." />
-            <marker date="1458085991402" expanded="true" signature="2250:2263" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -602,50 +578,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/ckeditor/samples/index.html">
+    <entry file="file://$PROJECT_DIR$/erro.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23266745">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="42" />
+        <state vertical-scroll-proportion="-3.548387">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/index.php">
+    <entry file="file://$PROJECT_DIR$/contato.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2923077">
-          <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.59694475">
+          <caret line="33" column="125" selection-start-line="30" selection-start-column="8" selection-end-line="33" selection-end-column="125" />
           <folding>
-            <marker date="1458091150498" expanded="true" signature="722:773" placeholder="SELECT * FRO..paginas..." />
-            <marker date="1458091150498" expanded="true" signature="1232:1277" placeholder="SELECT id FR..paginas..." />
-            <marker date="1458091150498" expanded="true" signature="1514:1558" placeholder="SELECT * FRO..paginas..." />
-            <marker date="1458091150498" expanded="true" signature="2074:2136" placeholder="UPDATE pagin..." />
+            <marker date="1454890630737" expanded="true" signature="79:382" placeholder="..." />
+            <marker date="1454890630737" expanded="true" signature="88:371" placeholder="..." />
+            <marker date="1454890630737" expanded="true" signature="101:152" placeholder="..." />
+            <marker date="1454890630737" expanded="true" signature="165:219" placeholder="..." />
+            <marker date="1454890630737" expanded="true" signature="232:289" placeholder="..." />
+            <marker date="1454890630737" expanded="true" signature="302:361" placeholder="..." />
+            <marker date="1454890630737" expanded="true" signature="476:1479" placeholder="..." />
+            <marker date="1454890630737" expanded="true" signature="535:1464" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/contato.php">
+    <entry file="file://$PROJECT_DIR$/admin/rodape.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.161291">
-          <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.025851939">
+          <caret line="1" column="66" selection-start-line="1" selection-start-column="66" selection-end-line="1" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.903226">
+          <caret line="48" column="49" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="49" />
           <folding>
-            <marker date="1458091181874" expanded="true" signature="195:697" placeholder="..." />
-            <marker date="1458091181874" expanded="true" signature="254:432" placeholder="..." />
-            <marker date="1458091181874" expanded="true" signature="254:506" placeholder="..." />
-            <marker date="1458091181874" expanded="true" signature="254:682" placeholder="..." />
-            <marker date="1458091181874" expanded="true" signature="450:464" placeholder="..." />
-            <marker date="1458091181874" expanded="true" signature="450:505" placeholder="..." />
+            <marker date="1458085991402" expanded="true" signature="722:773" placeholder="SELECT * FRO..paginas..." />
+            <marker date="1458085991402" expanded="true" signature="1232:1277" placeholder="SELECT id FR..paginas..." />
+            <marker date="1458085991402" expanded="true" signature="1514:1558" placeholder="SELECT * FRO..paginas..." />
+            <marker date="1458085991402" expanded="true" signature="1879:1896" placeholder="..." />
+            <marker date="1458085991402" expanded="true" signature="2250:2263" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fixture_admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62044656">
-          <caret line="24" column="84" selection-start-line="24" selection-start-column="84" selection-end-line="24" selection-end-column="84" />
+        <state vertical-scroll-proportion="0.67215043">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
           <folding>
-            <marker date="1458091744349" expanded="true" signature="139:165" placeholder="DROP TABLE I..." />
-            <marker date="1458091744349" expanded="true" signature="224:412" placeholder="CREATE TABLE..admin..." />
-            <marker date="1458091744349" expanded="true" signature="565:623" placeholder="INSERT INTO admin..." />
+            <marker date="1458099026796" expanded="true" signature="139:165" placeholder="DROP TABLE I..." />
+            <marker date="1458099026796" expanded="true" signature="224:404" placeholder="CREATE TABLE..admin..." />
+            <marker date="1458099026796" expanded="true" signature="557:615" placeholder="INSERT INTO admin..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.806452">
+          <caret line="142" column="22" selection-start-line="142" selection-start-column="22" selection-end-line="142" selection-end-column="22" />
+          <folding>
+            <marker date="1458099929107" expanded="true" signature="995:1040" placeholder="SELECT id FR..paginas..." />
+            <marker date="1458099929107" expanded="true" signature="1277:1321" placeholder="SELECT * FRO..paginas..." />
+            <marker date="1458099929107" expanded="true" signature="1766:1828" placeholder="UPDATE pagin..." />
+            <marker date="1458099929107" expanded="true" signature="2251:2265" placeholder="SELECT * FRO..admin..." />
+            <marker date="1458099929107" expanded="true" signature="2267:2290" placeholder="UPDATE pagin..." />
+            <marker date="1458099929107" expanded="true" signature="2267:2306" placeholder="SELECT * FRO..admin..." />
+            <marker date="1458099929107" expanded="true" signature="2267:2307" placeholder="SELECT * FRO..admin..." />
+            <marker date="1458099929107" expanded="true" signature="2267:2315" placeholder="SELECT * FRO..admin..." />
+            <marker date="1458099929107" expanded="true" signature="2267:2797" placeholder="SELECT * FRO..admin..." />
+            <marker date="1458099929107" expanded="true" signature="2649:2796" placeholder="..." />
+            <marker date="1458099929107" expanded="true" signature="2656:2671" placeholder="..." />
+            <marker date="1458099929107" expanded="true" signature="2656:2796" placeholder="..." />
+            <marker date="1458099929107" expanded="true" signature="2737:2796" placeholder="..." />
+            <marker date="1458099929107" expanded="true" signature="2771:2796" placeholder="{...}" />
+            <marker date="1458099929107" expanded="true" signature="3172:3185" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/contato.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35370153">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <folding>
+            <marker date="1458100498572" expanded="true" signature="465:1095" placeholder="..." />
+            <marker date="1458100498572" expanded="true" signature="524:1080" placeholder="..." />
+            <marker date="1458100498572" expanded="true" signature="1331:1837" placeholder="..." />
+            <marker date="1458100498572" expanded="true" signature="1390:1822" placeholder="..." />
+            <marker date="1458100498572" expanded="true" signature="1586:1645" placeholder="..." />
           </folding>
         </state>
       </provider>

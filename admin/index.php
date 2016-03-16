@@ -1,4 +1,18 @@
 <?php
+session_start();
+
+$pegarURL = parse_url("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+global $path;
+$path = explode("/",$pegarURL['path']);
+
+$nomePagina = $path[3];
+
+if($nomePagina != "login") {
+  if (!isset($_SESSION['logado']) AND $_SESSION['logado'] != 1) {
+    header("location: /projeto1/admin/login");
+    exit;
+  }
+}
 
 include 'conexaoDB.php';
 // Utilizei o "explode" ao invés do str_replace,
@@ -9,27 +23,13 @@ include 'conexaoDB.php';
 function ExibirPagina() {
 
   $conn = conexaoDB();
-
-  $pegarURL = parse_url("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
-  global $path;
-  $path = explode("/",$pegarURL['path']);
-
-  $nomePagina = $path[3];
+    $pegarURL = parse_url("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+    global $path;
+    $path = explode("/",$pegarURL['path']);
+    $nomePagina = $path[3];
 
   if($nomePagina == "") {
     $nomePagina = "home";
-  } elseif($nomePagina == "busca") {
-    $conteudoBusca = $_POST['busca'];
-    $sqlBusca = "SELECT * FROM paginas WHERE conteudo LIKE :conteudo";
-    $stmtBusca = $conn->prepare($sqlBusca);
-    $stmtBusca->bindValue(':conteudo', '%'.$conteudoBusca.'%', PDO::PARAM_STR);
-    $stmtBusca->execute();
-    $conteudoBusca = $stmtBusca->fetchAll(PDO::FETCH_ASSOC);
-    $somarConteudo = $stmtBusca->rowCount()." Páginas encontradas! <br />";
-    foreach ($conteudoBusca as $busca) {
-      $somarConteudo .= "Página: <a href='".$busca['pagina']."'>".$busca['pagina']."</a><br />";
-    }
-
   } else {
     $sql = "SELECT id FROM paginas WHERE pagina = :pagina";
     $stmt = $conn->prepare($sql);
@@ -48,11 +48,7 @@ function ExibirPagina() {
   $stmtCont->execute();
   $conteudo = $stmtCont->fetch(PDO::FETCH_ASSOC);
 
-  if($nomePagina == "busca") {
-    echo $somarConteudo;
-  } else {
     return $conteudo['conteudo'];
-  }
 
 
 }
@@ -73,6 +69,30 @@ function EditarConteudo() {
   $stmtEdi->execute();
 
     return "<h1>Dados alterados!</h1>";
+
+
+}
+
+function EfetuarLogin() {
+
+  $conn2 = conexaoDB();
+
+  $pegarURL = parse_url("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+  global $path;
+  $path = explode("/",$pegarURL['path']);
+
+  $usuario = $_POST['usuario'];
+  $sqlLogar = "SELECT senha FROM admin WHERE usuario = :usuario";
+  $stmtLogar = $conn2->prepare($sqlLogar);
+  $stmtLogar->bindValue("usuario", $usuario);
+  $stmtLogar->execute();
+    $password = $stmtLogar->fetch(PDO::FETCH_ASSOC);
+
+   if(password_verify($_POST['senha'],$password['senha'])) {
+       return true;
+   } else {
+       return false;
+   }
 
 
 }
@@ -112,6 +132,7 @@ function EditarConteudo() {
       <li><a href="produtos">Produtos</a></li>
       <li><a href="servicos">Serviços</a></li>
       <li><a href="contato">Contato</a></li>
+      <li><a href="logout">Logout</a></li>
     </ul>
     <h3 class="muted">Área Administrativa</h3>
   </div>
