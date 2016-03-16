@@ -83,6 +83,12 @@ function EditarConteudo() {
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <script src="ckeditor/ckeditor.js"></script>
+  <script type="text/javascript">
+    window.onload = function()  {
+      CKEDITOR.replace( 'editor1' );
+    };
+  </script>
   <meta charset="utf-8">
   <title>Admin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
